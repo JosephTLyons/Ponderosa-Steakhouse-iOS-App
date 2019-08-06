@@ -45,7 +45,6 @@ class ViewController: UIViewController {
                     mealName: i,
                     mealImage: UIImage(named: i),
                     mealDescription: "Temp text for now"
-
                 )
             )
         }
