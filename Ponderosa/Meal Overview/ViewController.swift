@@ -99,7 +99,5 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
             vc.meal = meals[indexPath.item]
             present(vc, animated: true, completion: nil)
         }
-
-        print(meals[indexPath.item])
     }
 }
