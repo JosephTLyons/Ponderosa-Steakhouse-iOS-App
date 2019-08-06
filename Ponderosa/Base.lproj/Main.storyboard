@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ymc-DP-ZDa">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Ponderosa Steakhouse-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ponderosa" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pA7-Oh-N5U">
-                                <rect key="frame" x="20" y="134.66666666666669" width="374" height="727.33333333333326"/>
+                                <rect key="frame" x="20" y="108" width="374" height="754"/>
                                 <color key="backgroundColor" red="0.098039215686274508" green="0.46274509803921571" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="35k-HE-RkG">
                                     <size key="itemSize" width="50" height="50"/>
@@ -38,35 +38,102 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ponderosa Logo" translatesAutoresizingMaskIntoConstraints="NO" id="kNv-zH-wyH">
-                                <rect key="frame" x="20" y="0.0" width="374" height="134.66666666666666"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="134.66999999999999" id="SAC-De-Xf9"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.098039215686274508" green="0.46274509803921571" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pA7-Oh-N5U" secondAttribute="trailing" constant="20" id="ADr-ds-vJf"/>
-                            <constraint firstItem="kNv-zH-wyH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Eba-S7-V7a"/>
-                            <constraint firstItem="pA7-Oh-N5U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="EkA-VD-iIa"/>
-                            <constraint firstItem="kNv-zH-wyH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Mst-IY-xVx"/>
-                            <constraint firstItem="pA7-Oh-N5U" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="UdZ-y3-u1h"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kNv-zH-wyH" secondAttribute="trailing" constant="20" id="VhZ-TV-jNQ"/>
-                            <constraint firstItem="pA7-Oh-N5U" firstAttribute="top" secondItem="kNv-zH-wyH" secondAttribute="bottom" id="feJ-8n-SoW"/>
+                            <constraint firstItem="pA7-Oh-N5U" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5HT-MW-geo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pA7-Oh-N5U" secondAttribute="trailing" constant="20" id="H9u-I1-asm"/>
+                            <constraint firstItem="pA7-Oh-N5U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="bAu-Sz-nLh"/>
+                            <constraint firstItem="pA7-Oh-N5U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nSM-1i-oYw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Ponderosa Steakhouse" id="eCr-3a-Ncj"/>
                     <connections>
                         <outlet property="collectionView" destination="pA7-Oh-N5U" id="6Re-yT-ZUA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="119.19642857142857"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="119.19642857142857"/>
+        </scene>
+        <!--Meal Description View Controller-->
+        <scene sceneID="8bl-lA-GA4">
+            <objects>
+                <viewController storyboardIdentifier="mealDescriptionVC" id="q39-u2-jQP" customClass="MealDescriptionViewController" customModule="Ponderosa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZwN-XD-fDb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ahx-OF-xbE" customClass="PImageView" customModule="Ponderosa" customModuleProvider="target">
+                                <rect key="frame" x="20" y="44" width="374" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ahx-OF-xbE" secondAttribute="height" multiplier="1:1" id="yHw-mv-v6e"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="efS-Ge-ens">
+                                <rect key="frame" x="20" y="428" width="374" height="378"/>
+                                <color key="backgroundColor" red="0.098039215686274508" green="0.46274509803921571" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLk-9F-Mu8" customClass="PUIButton" customModule="Ponderosa" customModuleProvider="target">
+                                <rect key="frame" x="20" y="816" width="374" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kif-pH-Z82"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="q39-u2-jQP" eventType="touchUpInside" id="HGO-qJ-8v5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039215686274508" green="0.46274509803921571" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ahx-OF-xbE" firstAttribute="top" secondItem="0Lv-St-CC0" secondAttribute="top" id="7RY-km-FKR"/>
+                            <constraint firstItem="JLk-9F-Mu8" firstAttribute="top" secondItem="efS-Ge-ens" secondAttribute="bottom" constant="10" id="N0j-bC-jpp"/>
+                            <constraint firstItem="JLk-9F-Mu8" firstAttribute="leading" secondItem="0Lv-St-CC0" secondAttribute="leading" constant="20" id="QXE-Js-WrK"/>
+                            <constraint firstItem="efS-Ge-ens" firstAttribute="leading" secondItem="0Lv-St-CC0" secondAttribute="leading" constant="20" id="Tlu-y7-yJi"/>
+                            <constraint firstAttribute="bottom" secondItem="JLk-9F-Mu8" secondAttribute="bottom" constant="30" id="Wqn-Jo-POZ"/>
+                            <constraint firstItem="0Lv-St-CC0" firstAttribute="trailing" secondItem="efS-Ge-ens" secondAttribute="trailing" constant="20" id="bY3-wt-7sV"/>
+                            <constraint firstItem="0Lv-St-CC0" firstAttribute="trailing" secondItem="Ahx-OF-xbE" secondAttribute="trailing" constant="20" id="ee7-pj-QQw"/>
+                            <constraint firstItem="Ahx-OF-xbE" firstAttribute="leading" secondItem="0Lv-St-CC0" secondAttribute="leading" constant="20" id="qLe-38-otC"/>
+                            <constraint firstItem="0Lv-St-CC0" firstAttribute="trailing" secondItem="JLk-9F-Mu8" secondAttribute="trailing" constant="20" id="sw5-8f-unp"/>
+                            <constraint firstItem="efS-Ge-ens" firstAttribute="top" secondItem="Ahx-OF-xbE" secondAttribute="bottom" constant="10" id="yER-bP-5Da"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0Lv-St-CC0"/>
+                    </view>
+                    <connections>
+                        <outlet property="largeMealImageView" destination="Ahx-OF-xbE" id="mZq-hv-9R2"/>
+                        <outlet property="mealDescriptionTextView" destination="efS-Ge-ens" id="lCL-kC-9vT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vhq-xI-Fvg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1805.7971014492755" y="118.52678571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tPA-VO-cmV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ymc-DP-ZDa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9jp-hI-7x1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2dx-CG-OZH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mzp-qU-2Jv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="310" y="119"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Ponderosa Logo" width="134.66667175292969" height="134.66667175292969"/>
-    </resources>
 </document>

@@ -21,7 +21,8 @@ class ViewController: UIViewController {
         "Chicken Strips",
         "Chop",
         "Shrimp Skewer",
-        "Burger"
+        "Burger",
+        "Wings"
     ]
 
     var meals: [Meal] = []
@@ -34,13 +35,19 @@ class ViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         setupCollectionViewItemSize()
-        collectionView.showsVerticalScrollIndicator = false
         addMealsToMealArray()
     }
 
     private func addMealsToMealArray() {
         for i in mealText {
-            meals.append(Meal(mealName: i, mealImage: UIImage(named: i)))
+            meals.append(
+                Meal(
+                    mealName: i,
+                    mealImage: UIImage(named: i),
+                    mealDescription: "Temp text for now"
+
+                )
+            )
         }
     }
 
@@ -49,6 +56,7 @@ class ViewController: UIViewController {
         collectionView.dataSource = self
         let nib = UINib(nibName: "MealCollectionViewCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: cellIdentifier)
+        collectionView.showsVerticalScrollIndicator = false
     }
 
     private func setupCollectionViewItemSize() {
@@ -86,6 +94,12 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("didSelectItemAtIndexPath: \(indexPath)")
+
+        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mealDescriptionVC") as? MealDescriptionViewController {
+            vc.meal = meals[indexPath.item]
+            present(vc, animated: true, completion: nil)
+        }
+
+        print(meals[indexPath.item])
     }
 }

@@ -14,12 +14,5 @@ class MealCollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        styleImageView()
-    }
-
-    private func styleImageView() {
-        mealImageView.contentMode = .scaleAspectFill
-        mealImageView.layer.borderWidth = 2
-        mealImageView.layer.borderColor = UIColor.black.cgColor
     }
 }

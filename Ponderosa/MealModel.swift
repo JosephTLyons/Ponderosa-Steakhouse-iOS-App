@@ -11,4 +11,5 @@ import UIKit
 struct Meal {
     var mealName: String
     var mealImage: UIImage!
+    var mealDescription: String
 }
