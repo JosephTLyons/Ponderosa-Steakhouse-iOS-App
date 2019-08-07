@@ -22,6 +22,7 @@ class MealDescriptionViewController: UIViewController {
         mealDescriptionTextView.text = meal?.mealDescription
         mealLabel.text = meal?.mealName
     }
+    
     @IBAction func backButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
