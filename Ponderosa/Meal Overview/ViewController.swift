@@ -14,17 +14,6 @@ class ViewController: UIViewController {
     var collectionViewFlowLayout: UICollectionViewFlowLayout!
     let cellIdentifier = "mealCollectionViewCell"
 
-    var mealText: [String] = [
-        "7 oz Sirloin",
-        "Salmon",
-        "Tilapia",
-        "Chicken Strips",
-        "Chop",
-        "Shrimp Skewer",
-        "Burger",
-        "Wings"
-    ]
-
     var meals: [Meal] = []
 
     override func viewDidLoad() {
@@ -39,15 +28,75 @@ class ViewController: UIViewController {
     }
 
     private func addMealsToMealArray() {
-        for i in mealText {
-            meals.append(
-                Meal(
-                    mealName: i,
-                    mealImage: UIImage(named: i),
-                    mealDescription: "Temp text for now"
-                )
+        meals.append(
+            Meal(mealName: "7 oz Sirloin",
+                 mealImage: UIImage(named: "7 oz Sirloin"),
+                 mealDescription: "MMMMM"
             )
-        }
+        )
+
+        meals.append(
+            Meal(mealName: "Salmon",
+                 mealImage: UIImage(named: "Salmon"),
+                 mealDescription: "MMMMM"
+            )
+        )
+
+        meals.append(
+            Meal(mealName: "Tilapia",
+                 mealImage: UIImage(named: "Tilapia"),
+                 mealDescription: "MMMMM"
+            )
+        )
+
+        meals.append(
+            Meal(mealName: "Chicken Strips",
+                 mealImage: UIImage(named: "Chicken Strips"),
+                 mealDescription: "MMMMM"
+            )
+        )
+
+        meals.append(
+            Meal(mealName: "Chop Steak",
+                 mealImage: UIImage(named: "Chop"),
+                 mealDescription: "MMMMM"
+            )
+        )
+
+        meals.append(
+            Meal(mealName: "Shrimp Skewer",
+                 mealImage: UIImage(named: "Shrimp Skewer"),
+                 mealDescription: "MMMMM"
+            )
+        )
+
+        meals.append(
+            Meal(mealName: "Burger",
+                 mealImage: UIImage(named: "Burger"),
+                 mealDescription: "MMMMM"
+            )
+        )
+
+        meals.append(
+            Meal(mealName: "Wings",
+                 mealImage: UIImage(named: "Wings"),
+                 mealDescription: "Our signature, savory wings.  Drummies or wings? You are in control of your fate!"
+            )
+        )
+
+        meals.append(
+            Meal(mealName: "Prime Rib",
+                 mealImage: UIImage(named: "Prime Rib"),
+                 mealDescription: "MMMMM"
+            )
+        )
+
+        meals.append(
+            Meal(mealName: "10 oz Ribeye",
+                 mealImage: UIImage(named: "Ribeye"),
+                 mealDescription: "MMMMM"
+            )
+        )
     }
 
     private func setupCollectionView() {

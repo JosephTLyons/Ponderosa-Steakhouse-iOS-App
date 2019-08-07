@@ -66,19 +66,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ahx-OF-xbE" customClass="PImageView" customModule="Ponderosa" customModuleProvider="target">
-                                <rect key="frame" x="20" y="44" width="374" height="374"/>
+                                <rect key="frame" x="20" y="104" width="374" height="374"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Ahx-OF-xbE" secondAttribute="height" multiplier="1:1" id="yHw-mv-v6e"/>
+                                    <constraint firstAttribute="width" secondItem="Ahx-OF-xbE" secondAttribute="height" multiplier="1:1" id="XTD-yq-30n"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="efS-Ge-ens">
-                                <rect key="frame" x="20" y="428" width="374" height="378"/>
-                                <color key="backgroundColor" red="0.098039215686274508" green="0.46274509803921571" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLk-9F-Mu8" customClass="PUIButton" customModule="Ponderosa" customModuleProvider="target">
                                 <rect key="frame" x="20" y="816" width="374" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -92,25 +84,46 @@
                                     <action selector="backButtonPressed:" destination="q39-u2-jQP" eventType="touchUpInside" id="HGO-qJ-8v5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aY-Pu-8kE">
+                                <rect key="frame" x="20" y="44" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DSz-8g-pKG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="efS-Ge-ens">
+                                <rect key="frame" x="20" y="488" width="374" height="318"/>
+                                <color key="backgroundColor" red="0.098039215686274508" green="0.46274509803921571" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.098039215686274508" green="0.46274509803921571" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ahx-OF-xbE" firstAttribute="top" secondItem="0Lv-St-CC0" secondAttribute="top" id="7RY-km-FKR"/>
-                            <constraint firstItem="JLk-9F-Mu8" firstAttribute="top" secondItem="efS-Ge-ens" secondAttribute="bottom" constant="10" id="N0j-bC-jpp"/>
+                            <constraint firstItem="5aY-Pu-8kE" firstAttribute="top" secondItem="0Lv-St-CC0" secondAttribute="top" id="47S-s2-0E9"/>
+                            <constraint firstItem="efS-Ge-ens" firstAttribute="top" secondItem="Ahx-OF-xbE" secondAttribute="bottom" constant="10" id="6Bg-9X-9Ua"/>
+                            <constraint firstItem="0Lv-St-CC0" firstAttribute="trailing" secondItem="5aY-Pu-8kE" secondAttribute="trailing" constant="20" id="8SW-bS-P5g"/>
+                            <constraint firstItem="JLk-9F-Mu8" firstAttribute="top" secondItem="efS-Ge-ens" secondAttribute="bottom" constant="10" id="Gd2-90-Eeu"/>
+                            <constraint firstItem="efS-Ge-ens" firstAttribute="leading" secondItem="0Lv-St-CC0" secondAttribute="leading" constant="20" id="JGP-33-hS0"/>
                             <constraint firstItem="JLk-9F-Mu8" firstAttribute="leading" secondItem="0Lv-St-CC0" secondAttribute="leading" constant="20" id="QXE-Js-WrK"/>
-                            <constraint firstItem="efS-Ge-ens" firstAttribute="leading" secondItem="0Lv-St-CC0" secondAttribute="leading" constant="20" id="Tlu-y7-yJi"/>
                             <constraint firstAttribute="bottom" secondItem="JLk-9F-Mu8" secondAttribute="bottom" constant="30" id="Wqn-Jo-POZ"/>
-                            <constraint firstItem="0Lv-St-CC0" firstAttribute="trailing" secondItem="efS-Ge-ens" secondAttribute="trailing" constant="20" id="bY3-wt-7sV"/>
-                            <constraint firstItem="0Lv-St-CC0" firstAttribute="trailing" secondItem="Ahx-OF-xbE" secondAttribute="trailing" constant="20" id="ee7-pj-QQw"/>
-                            <constraint firstItem="Ahx-OF-xbE" firstAttribute="leading" secondItem="0Lv-St-CC0" secondAttribute="leading" constant="20" id="qLe-38-otC"/>
+                            <constraint firstItem="0Lv-St-CC0" firstAttribute="trailing" secondItem="Ahx-OF-xbE" secondAttribute="trailing" constant="20" id="hvQ-9G-n8r"/>
+                            <constraint firstItem="5aY-Pu-8kE" firstAttribute="leading" secondItem="0Lv-St-CC0" secondAttribute="leading" constant="20" id="izS-G1-LBI"/>
+                            <constraint firstItem="Ahx-OF-xbE" firstAttribute="top" secondItem="5aY-Pu-8kE" secondAttribute="bottom" constant="10" id="pN6-V8-iQM"/>
+                            <constraint firstItem="Ahx-OF-xbE" firstAttribute="leading" secondItem="0Lv-St-CC0" secondAttribute="leading" constant="20" id="sDU-SV-a7w"/>
                             <constraint firstItem="0Lv-St-CC0" firstAttribute="trailing" secondItem="JLk-9F-Mu8" secondAttribute="trailing" constant="20" id="sw5-8f-unp"/>
-                            <constraint firstItem="efS-Ge-ens" firstAttribute="top" secondItem="Ahx-OF-xbE" secondAttribute="bottom" constant="10" id="yER-bP-5Da"/>
+                            <constraint firstItem="0Lv-St-CC0" firstAttribute="trailing" secondItem="efS-Ge-ens" secondAttribute="trailing" constant="20" id="zgQ-Jc-XKa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0Lv-St-CC0"/>
                     </view>
                     <connections>
                         <outlet property="largeMealImageView" destination="Ahx-OF-xbE" id="mZq-hv-9R2"/>
                         <outlet property="mealDescriptionTextView" destination="efS-Ge-ens" id="lCL-kC-9vT"/>
+                        <outlet property="mealLabel" destination="5aY-Pu-8kE" id="YP4-Bm-vRp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vhq-xI-Fvg" userLabel="First Responder" sceneMemberID="firstResponder"/>
